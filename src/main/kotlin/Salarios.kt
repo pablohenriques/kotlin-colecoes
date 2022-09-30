@@ -7,4 +7,9 @@ fun main() {
         salarios[indice] = salarios[indice] * aumento
     }
     println(salarios.contentToString())
+
+    salarios.forEachIndexed { i, salario ->
+        salarios[i] = salario * aumento
+    }
+    println(salarios.contentToString())
 }
